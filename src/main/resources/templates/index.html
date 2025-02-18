@@ -40,7 +40,12 @@
                   <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                 </ul>
              </li>
-             <li><a href="./user/list.html"><i class="glyphicon glyphicon-user"></i></a></li>
+              login::
+              <li><a href="./user/list.html"><i class="glyphicon glyphicon-user"></i></a></li>
+              ::login
+              not_login::
+              <li><a href="./user/login.html"><i class="glyphicon glyphicon-user"></i></a></li>
+              ::not_login
            </ul>
         </div>	
      </div>	
@@ -64,15 +69,16 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse2">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Posts</a></li>
-                <li><a href="user/login.html" role="button">로그인</a></li>
-                <li><a href="user/form.html" role="button">회원가입</a></li>
-                <!--
-                <li><a href="#loginModal" role="button" data-toggle="modal">로그인</a></li>
-                <li><a href="#registerModal" role="button" data-toggle="modal">회원가입</a></li>
-                -->
+                not_login::
+                <li class="active"><a href="../index.html">Posts</a></li>
+                <li><a href="../user/login.html" role="button">로그인</a></li>
+                <li><a href="../user/form.html" role="button">회원가입</a></li>
+                ::not_login
+                login::
+                <li><a>:model.name:님! 환영합니다.</a></li>
                 <li><a href="#" role="button">로그아웃</a></li>
                 <li><a href="#" role="button">개인정보수정</a></li>
+                ::login
             </ul>
         </div>
     </div>

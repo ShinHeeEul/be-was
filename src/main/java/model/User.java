@@ -1,10 +1,15 @@
 package model;
 
+
 public class User {
-    private String userId;
-    private String password;
-    private String name;
-    private String email;
+    private final String userId;
+    private final String password;
+    private final String name;
+    private final String email;
+    public static final String USERID_KEY = "userId";
+    public static final String PASSWORD_KEY = "password";
+    public static final String NAME_KEY = "name";
+    public static final String EMAIL_KEY = "email";
 
     public User(String userId, String password, String name, String email) {
         this.userId = userId;
@@ -28,6 +33,7 @@ public class User {
     public String getEmail() {
         return email;
     }
+
 
     @Override
     public String toString() {
